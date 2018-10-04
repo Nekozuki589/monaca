@@ -1,0 +1,15 @@
+{
+    "framework_version": "3.5",
+    "xcode_version": "9",
+    "title-ja": "書籍サンプル8-3",
+    "title-en": "Sample App 8-3 (Monaca Official Guide)",
+    "description-ja": "「クラウドでできるHTML5ハイブリッドアプリ開発入門」にて解説されているサンプルアプリです。\r\n詳細については、https:\/\/ja.monaca.io\/book\/supportを参照してください。",
+    "description-en": "This is a sample application used in the official guide book. \r\nPlease see https:\/\/ja.monaca.io\/book\/support (Japanese) for more information.\r\n",
+    "category": "User Template",
+    "platform": [
+        "android",
+        "ios"
+    ],
+    "name": "generated-1424236629-5489774d7e2193d24e80e547",
+    "cordova_version": "7.1"
+}

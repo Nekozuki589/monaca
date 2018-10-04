@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        
+    </style>
+    <script>
+       
+        
+    </script>
+</head>
+<body>
+    <ons-navigator var="myNavi">
+        <ons-page id="main-page">
+            <ons-toolbar>
+                <div class="center">画像</div>
+            </ons-toolbar>
+            <br>
+            <ons-list>
+                <ons-list-item modifier="chevron" class="take-from-gallery">
+                    <ons-icon icon="ion-images"></ons-icon> ギャラリーから選ぶ
+                </ons-list-item>
+                <ons-list-item modifier="chevron" class="take-from-camera">
+                    <ons-icon icon="ion-camera"></ons-icon> カメラで撮影
+                </ons-list-item>
+            </ons-list>
+            <br>
+        </ons-page>
+    </ons-navigator> 
+    
+    <ons-template id="loading.html">
+        <ons-alert-dialog var="loading">
+            <div class="alert-dialog-title">処理中...</div>
+            <div class="alert-dialog-content">
+                <ons-icon icon="ion-load-c" spin="true"></ons-icon> <span style="font-size: 13px; color: #999">画像を変換しています...</span>
+            </div>
+        </ons-alert-dialog>
+    </ons-template>
+
+    <ons-template id="image.html">
+        <ons-page id="image-page">
+            <ons-toolbar>
+                <div class="left">
+                    <ons-back-button ons-if-platform="ios">Back</ons-back-button>
+                </div>
+                <div class="center">画像</div>
+            </ons-toolbar>
+            <ons-carousel var="imageCarousel" class="image-carousel" fullscreen auto-scroll overscrollable>
+            </ons-carousel>
+        </ons-page>
+    </ons-template>
+</body>
+</html>
